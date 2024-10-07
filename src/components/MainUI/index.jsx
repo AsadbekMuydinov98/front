@@ -1,4 +1,4 @@
-import './MainUI.css';
+import './Mainui.css';
 import SpellChecker from '../SpellChecker';
 import Sidebar from '../Sidebar';
 
