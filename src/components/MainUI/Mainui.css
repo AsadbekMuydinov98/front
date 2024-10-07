@@ -1,0 +1,9 @@
+.blok {
+  display: flex;
+}
+
+@media (max-width: 900px){
+  .blok{
+    flex-direction: column;
+  }
+}

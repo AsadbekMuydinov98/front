@@ -1,0 +1,38 @@
+.spell-checker-container {
+  width: 90%;
+  margin-top: 2vh;
+  padding: 2vw;
+}
+
+.mistake {
+  color: #721c24;
+  text-decoration: line-through solid #721c24;
+}
+
+.correction {
+  color: #155724;
+  font-weight: 700;
+}
+
+.spell-check-results {
+  margin-top: 20px;
+}
+
+.original-text-card {
+  background-color: #ffecec;
+  border-color: #ff4d4f;
+}
+
+.corrected-text-card {
+  background-color: #e6ffed;
+  border-color: #52c41a;
+}
+
+
+@media (max-width: 900px){
+  .spell-checker-container {
+    width: 95%;
+    margin-top: 2vh;
+    padding: 2vw;
+  }
+}
