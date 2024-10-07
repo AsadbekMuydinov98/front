@@ -4,7 +4,7 @@ import axios from 'axios';
 const RegisterForm = ({ switchToLogin }) => {
   const onFinish = async (values) => {
     try {
-      const response = await axios.post('http://localhost:4000/api/auth/signup', values);
+      const response = await axios.post('https://back-yhh6.onrender.com/api/auth/signup', values);
       message.success('Registration successful!');
       localStorage.setItem('token', response.data.token);
     } catch (error) {

@@ -43,7 +43,7 @@ const SpellChecker = ({ selectedText, selectedSuggestions }) => {
 
   const handleCheckSpelling = async () => {
     try {
-      const response = await axios.post('http://localhost:4000/api/check/check-spelling', {
+      const response = await axios.post('https://back-yhh6.onrender.com/api/check/check-spelling', {
         text,
         language,
       });
@@ -91,7 +91,7 @@ const SpellChecker = ({ selectedText, selectedSuggestions }) => {
     const token = localStorage.getItem('token');
     try {
       await axios.post(
-        'http://localhost:4000/api/check/save-spell-check',
+        'https://back-yhh6.onrender.com/api/check/save-spell-check',
         { date, originalText: text, suggestions },
         { headers: { Authorization: `Bearer ${token}` } }
       );
